@@ -3,10 +3,10 @@
 ### [수업 목표]
 1. iOS 개발의 시작과 끝, Xcode 개발툴 익숙해지기
 2. 스토리보드(화면 만들기) 기초 다지기
-  1. UI 컴포넌트 이해하기
-    : 라벨 (UILabel), 이미지뷰 (UIImageView), 버튼 (UIButton)
-  2. 이미지 에셋을 관리하는 방법 익히기
-  3. @IBAction 과 @IBOutlet 연결하는 방법 익히기
+    1) UI 컴포넌트 이해하기
+      : 라벨 (UILabel), 이미지뷰 (UIImageView), 버튼 (UIButton)
+    2) 이미지 에셋을 관리하는 방법 익히기
+    3) @IBAction 과 @IBOutlet 연결하는 방법 익히기
 3. Swift 기본 문법 익히기
 4. 스크린 손전등 앱 만들기
 
