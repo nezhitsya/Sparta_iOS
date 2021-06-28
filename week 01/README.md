@@ -92,27 +92,92 @@ iOS에서는 포인트(Point) 단위를 사용하여 픽셀(Pixel)과 다르게 
 [이미지 편집 사이트](https://appicon.co)에서 자동으로 1x부터 3x 이미지 생성
 
 ## 06. Swift 맛보기
-Assistant 화면 띄우기 단축키 (command + option + control + Enter)
+- Assistant 화면 띄우기 단축키 (command + option + control + Enter)
 <img width="700" src="https://user-images.githubusercontent.com/60697742/123587730-a9400e80-d821-11eb-8ab4-acd3bc1bfa7b.png">
 
-Build and run 단축키 (command + r)
+- Build and run 단축키 (command + r)
+
+- Connection
+Label 또는 ImageView를 control 키와 함께 드래그해서 코드에 연결해준다.
+
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123589455-37b58f80-d824-11eb-976e-df6966fbe527.png">
+
+```swift
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var flash: UIImageView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+}
+```
 
 ## 07. Swift 기초 문법 - 변수 선언과 기본 데이터 타입
 - var로 변수를 선언
     - 변수명 형식 - 코딩 컨벤션 (코딩 규칙, coding convention)
     - snake case : 단어를 _ 로 연결
-    ```
+    ```swift
     var first_name = "Dayeong"
     ```
     - camel case : 단어가 연결되는 부분의 첫 글자를 대문자로 작성
-    ```
+    ```swift
     var firstName = "Dayeong"
     ```
 - 사칙연산
+```swift
+var num1 = 11
+var num2 = 20
+
+print(num1 + num2) // 31
+print(num1 * num2) // 220
+print(num2 / num1) // 1
+```
+
+```swift
+var firstName = "Dayeong"
+var lastName = "Lee"
+
+print(firstName + " " + lastName) // Dayeong Lee
+print("\(firstName)~\(lastName)") // Dayeong~Lee
+```
 - 참 거짓 True False 자료형
+```swift
+var birth = 1120
+var isTrue = (birth == 1120) // True
+var isFalse = (birth != 1120) // False
+
+print(isTrue && isFalse) // False
+print(isTrue || isFalse) // True
+```
+
 - && || 구분
 <p align="center">
   <img width="400" src="https://user-images.githubusercontent.com/60697742/123588526-db9e3b80-d822-11eb-81a8-76b469b2ec63.png">
 </p>
 
 ## 08. Swift 기초 문법 - 리스트, 딕셔너리, 함수
+- 리스트 (List) : 순서를 가지고 있는 형태
+
+```swift
+var sampleList: [Int] = [] // 빈 리스트 선언
+var sampleList = [1, 2, 3, 4]
+
+print(sampleList[0]) // 1
+sampleList.append(5) // 리스트 요소 추가
+print(sampleList.count) // 5
+```
+
+- 딕셔너리 (Dictionary) : 키 - 값이 쌍을 이루고 있는 형태
+```
+var sampleDict: [String: String] = [:] // 빈 딕셔너리 선언
+var sampleDict: [String: String] = ["name": "Dayeong", "birth": "1120"]
+
+print(sampleDict["name"]) // Dayeong
+sampleDict["city"] = "Seoul"
+print(sampleDict) // ["name": "Dayeong", "birth": "1120", "city": "Seoul"]
+```
