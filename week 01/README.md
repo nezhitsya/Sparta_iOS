@@ -33,19 +33,36 @@
 
 1. Xcode에 애플 로그인
 - Xcode 상단 Xocde -> Preferences...
-<img width="500" src="https://user-images.githubusercontent.com/60697742/123584812-ff5e8300-d81c-11eb-96fd-8f198e6a1245.png">
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123584812-ff5e8300-d81c-11eb-96fd-8f198e6a1245.png">
 
 - Accounts에서 Apple ID 넣기 (왼쪽 하단 + 버튼)
-<img width="500" src="https://user-images.githubusercontent.com/60697742/123584853-0f766280-d81d-11eb-97b8-e42446352983.png">
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123584853-0f766280-d81d-11eb-97b8-e42446352983.png">
 
 - Apple ID 선택하고 로그인
-<img width="500" src="https://user-images.githubusercontent.com/60697742/123584858-10a78f80-d81d-11eb-8720-1764200544eb.png">
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123584858-10a78f80-d81d-11eb-8720-1764200544eb.png">
 
 2. 프로젝트를 로그인한 아이디로 설정
 - 프로젝트 설정 -> Targets에서 해당 앱 -> Signing & Capabilities
-<img width="500" src="https://user-images.githubusercontent.com/60697742/123584859-11d8bc80-d81d-11eb-99b4-b7d84c4503a7.png">
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123584859-11d8bc80-d81d-11eb-99b4-b7d84c4503a7.png">
 
 - Automatically manage signing 체크 + Team에 로그인한 아이디 선택
-<img width="500" src="https://user-images.githubusercontent.com/60697742/123585368-118cf100-d81e-11eb-9771-d507f8395502.png">
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123585368-118cf100-d81e-11eb-9771-d507f8395502.png">
+
+3. 아이폰을 연결하고 빌드 대상을 해당 아이폰으로 선택
+
+4. 오류
+```
+앱 개발자 등록 시, 오류 발생 X
+```
+**Could not launch "App name"** 이라는 오류가 발생한다면 ...
+
+- 아이폰 설정 -> 기기관 -> ...
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123585900-e951c200-d81e-11eb-86cd-0d7a56a19677.png">
+
+- App Development: ... 선택 -> 신뢰
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123586012-17cf9d00-d81f-11eb-9a12-e2a786e44a05.png">
+
+**Unable to install "App name"** 이라는 오류가 발생한다면 ...
+- 이전에 설치한 어플 삭제 후 다시 빌드
 
 ## 05. 이미지뷰와 이미지 에셋
