@@ -66,3 +66,53 @@
 - 이전에 설치한 어플 삭제 후 다시 빌드
 
 ## 05. 이미지뷰와 이미지 에셋
+- UIImageView
+Library 단축키 (command + shift + l)
+[https://developer.apple.com/sf-symbols/](https://developer.apple.com/sf-symbols/) 에서 시스템 아이콘 확인
+
+- Image Assets
+1. 네비게이션 탭에서 Assets.xcassets 선택
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123587048-a5f85300-d820-11eb-8b26-2e29a2792462.png">
+
+2. 하단의 + 버튼을 눌러 Image Set 선택
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123587055-a7298000-d820-11eb-81ec-fc32ff35b5be.png">
+
+3. 이미지를 1x에 넣기
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123587058-a85aad00-d820-11eb-9061-dbd2ac8b13cd.png">
+
+**해상도**
+배수(scale factor)가 늘어날수록 선명해진다.
+
+<p align="center">
+  <img width="700" src="https://user-images.githubusercontent.com/60697742/123587219-ece64880-d820-11eb-8b5e-d9cda44fdced.png">
+</p>
+
+iOS에서는 포인트(Point) 단위를 사용하여 픽셀(Pixel)과 다르게 해상도가 높아져도 포인트에 변화 X
+
+[이미지 편집 사이트](https://appicon.co)에서 자동으로 1x부터 3x 이미지 생성
+
+## 06. Swift 맛보기
+Assistant 화면 띄우기 단축키 (command + option + control + Enter)
+<img width="700" src="https://user-images.githubusercontent.com/60697742/123587730-a9400e80-d821-11eb-8ab4-acd3bc1bfa7b.png">
+
+Build and run 단축키 (command + r)
+
+## 07. Swift 기초 문법 - 변수 선언과 기본 데이터 타입
+- var로 변수를 선언
+    - 변수명 형식 - 코딩 컨벤션 (코딩 규칙, coding convention)
+    - snake case : 단어를 _ 로 연결
+    ```
+    var first_name = "Dayeong"
+    ```
+    - camel case : 단어가 연결되는 부분의 첫 글자를 대문자로 작성
+    ```
+    var firstName = "Dayeong"
+    ```
+- 사칙연산
+- 참 거짓 True False 자료형
+- && || 구분
+<p align="center">
+  <img width="400" src="https://user-images.githubusercontent.com/60697742/123588526-db9e3b80-d822-11eb-81a8-76b469b2ec63.png">
+</p>
+
+## 08. Swift 기초 문법 - 리스트, 딕셔너리, 함수
