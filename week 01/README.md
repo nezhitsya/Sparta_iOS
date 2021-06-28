@@ -199,8 +199,8 @@ func 함수이름(필요한 변수 & 타입) {
 
 ## 09. Quiz
 Q. 숫자를 하나 받아 짝수, 홀수 구별 함수 & 출생년도와 계산하고 싶은 연도를 입력받아 연령대 계산 함수 <br>
-    ex) isEven(num: 10) -> True
-    ex) calculateAgeRange(calYear: 2021, birthYear: 1993) -> 20대
+    ex) isEven(num: 10) -> True <br>
+    ex) calculateAgeRange(calYear: 2021, birthYear: 1993) -> 20대 <br>
 A.
 ```swift
 func isEven(num: Int) -> Bool {
