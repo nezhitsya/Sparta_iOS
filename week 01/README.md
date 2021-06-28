@@ -173,11 +173,44 @@ print(sampleList.count) // 5
 ```
 
 - 딕셔너리 (Dictionary) : 키 - 값이 쌍을 이루고 있는 형태
-```
+```swift
 var sampleDict: [String: String] = [:] // 빈 딕셔너리 선언
 var sampleDict: [String: String] = ["name": "Dayeong", "birth": "1120"]
 
 print(sampleDict["name"]) // Dayeong
 sampleDict["city"] = "Seoul"
 print(sampleDict) // ["name": "Dayeong", "birth": "1120", "city": "Seoul"]
+```
+
+- 함수
+```swift
+func 함수이름(필요한 변수 & 타입) -> 반환할 변수 타입 {
+  명령어들 순차적 작성
+  return 결과값
+}
+
+결과값 = 함수이름(필요한 변수)
+
+// 반환할 별수 타입이 없으면 '->' 생략
+func 함수이름(필요한 변수 & 타입) {
+  명령어 순차적 작성
+}
+```
+
+## 09. Quiz
+Q. 숫자를 하나 받아 짝수, 홀수 구별 함수 & 출생년도와 계산하고 싶은 연도를 입력받아 연령대 계산 함수
+    ex) isEven(num: 10) -> True
+    ex) calculateAgeRange(calYear: 2021, birthYear: 1993) -> 20대
+A.
+```swift
+func isEven(num: Int) -> Bool {
+  var result = num %2
+  return result == 0
+}
+
+func calculateAgeRange(calYear: Int, birthYear: Int) -> String {
+  var age = calYear - birthYear
+  var result = age / 10
+  return "\(result)0 대"
+}
 ```
