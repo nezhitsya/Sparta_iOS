@@ -1,5 +1,4 @@
-# Flashlight
-[개발일지](https://velog.io/@nezhitsya/스파르타-코딩-클럽-개발일지-1)
+# [Flashlight](https://velog.io/@nezhitsya/스파르타-코딩-클럽-개발일지-1)
 
 ## 결과물
 
