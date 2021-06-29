@@ -14,7 +14,7 @@
 - UI 컴포넌트들을 이용해서 조건문, 반복문 활용
 
 ## 02. Swift 기본 문법 - 조건문, 반복문
-- 조건문
+- 조건문 <br>
     Ex. 20 보다 작으면 청소년, 20 보다 크면 성인
     ```swift
     var age = 30
@@ -26,7 +26,7 @@
     }
     ```
 
-    - 조건이 여러 개일 경우 사용하는 if, else if, else
+    - 조건이 여러 개일 경우 사용하는 if, else if, else <br>
     Ex.
     ```swift
     var fruit = "apple"
@@ -42,7 +42,7 @@
     }
     ```
 
-    - switch : if, else if, else 간편화
+    - switch : if, else if, else 간편화 <br>
     Ex.
     ```swift
     var fruit = "apple"
@@ -58,7 +58,7 @@
       print("fruit JMT")
     }
     ```
-- 반복문
+- 반복문 <br>
     Ex. 0부터 99까지 출력
     ```swift
     for i in 0..<100 {
