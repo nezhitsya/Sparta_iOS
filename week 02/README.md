@@ -95,3 +95,17 @@
 </p>
 
 [과제 설명](https://github.com/nezhitsya/Sparta_iOS/blob/master/week%2002/SwiftPractice%2001/README.md)
+
+## 04. UI 컴포넌트와 반복문
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/123888270-18d30c80-d98e-11eb-9456-b9884dc90e63.mov">
+</p>
+
+[과제 설명](https://github.com/nezhitsya/Sparta_iOS/blob/master/week%2002/SwiftPractice%2002/README.md)
+
+## 05. UIButton -> UISwitch
+
+## 06. Swift 심화 문법 - 옵셔널
+
+## 07. Swift 심화 문법 - 클래스, 구조체

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poker" translatesAutoresizingMaskIntoConstraints="NO" id="2X8-41-COC">
+                                <rect key="frame" x="34.5" y="185.5" width="345" height="525"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="345" id="WAG-UG-EO0"/>
+                                    <constraint firstAttribute="height" constant="525" id="kRF-48-fff"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70P-Vi-ysW">
+                                <rect key="frame" x="182.5" y="777" width="51" height="31"/>
+                                <color key="onTintColor" red="0.84818118809999998" green="0.68038076160000005" blue="0.23121896389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="thumbTintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="e4n-8n-3M2"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="70P-Vi-ysW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4tb-wE-dg6"/>
+                            <constraint firstItem="2X8-41-COC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="atA-DJ-Qvu"/>
+                            <constraint firstItem="2X8-41-COC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dVP-ml-I9Z"/>
+                            <constraint firstItem="70P-Vi-ysW" firstAttribute="top" secondItem="2X8-41-COC" secondAttribute="bottom" constant="66.5" id="t7n-9M-hv7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardImage" destination="2X8-41-COC" id="0S6-aJ-ob2"/>
+                        <outlet property="flipSwtich" destination="70P-Vi-ysW" id="LYf-83-bMI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="poker" width="250" height="350"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
