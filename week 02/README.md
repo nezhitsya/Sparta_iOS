@@ -89,3 +89,7 @@
     ```
 
 ## 03. UI 컴포넌트와 조건문
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/123884270-d6a5cd00-d985-11eb-8e96-0c2f1c2e586d.mov">
+</p>
