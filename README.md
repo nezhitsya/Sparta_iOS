@@ -7,6 +7,6 @@
 </p>
 
 ```
-기초적인 IBOulet과 IBAction 연결 학습.
-Color Assets과 AutoLayout은 학습하지 않았지만 적용해보았다.
+App Icon 넣기
+RGB Color를 UIColor로 표현하기
 ```
