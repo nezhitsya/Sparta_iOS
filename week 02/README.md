@@ -93,3 +93,5 @@
 <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/60697742/123884270-d6a5cd00-d985-11eb-8e96-0c2f1c2e586d.mov">
 </p>
+
+(과제 설명)[https://github.com/nezhitsya/Sparta_iOS/blob/master/week%2002/SwiftPractice%2001/README.md]
