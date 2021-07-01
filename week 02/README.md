@@ -88,23 +88,23 @@
     }
     ```
 
-## 03. UI 컴포넌트와 조건문
+## 03. [UI 컴포넌트와 조건문](https://github.com/nezhitsya/Sparta_iOS/blob/master/week%2002/SwiftPractice%2001/README.md)
 
 <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/60697742/123884270-d6a5cd00-d985-11eb-8e96-0c2f1c2e586d.mov">
 </p>
 
-[과제 설명](https://github.com/nezhitsya/Sparta_iOS/blob/master/week%2002/SwiftPractice%2001/README.md)
-
-## 04. UI 컴포넌트와 반복문
+## 04. [UI 컴포넌트와 반복문](https://github.com/nezhitsya/Sparta_iOS/blob/master/week%2002/SwiftPractice%2002/README.md)
 
 <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/60697742/123888270-18d30c80-d98e-11eb-9456-b9884dc90e63.mov">
 </p>
 
-[과제 설명](https://github.com/nezhitsya/Sparta_iOS/blob/master/week%2002/SwiftPractice%2002/README.md)
-
 ## 05. UIButton -> UISwitch
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/124045596-f3580880-da4a-11eb-9aee-36cfe27dbd30.mov">
+</p>
 
 ## 06. Swift 심화 문법 - 옵셔널
 
