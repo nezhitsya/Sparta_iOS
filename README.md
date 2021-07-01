@@ -10,3 +10,9 @@
 App Icon 넣기
 RGB Color를 UIColor로 표현하기
 ```
+
+## 2 주차 과제
+
+```
+Segment Control 이용
+```
