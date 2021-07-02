@@ -8,8 +8,8 @@
 
 <img width="700" src="https://user-images.githubusercontent.com/60697742/123884573-7e22ff80-d986-11eb-810e-da5993187e2a.png">
 
-**ImageView** - poker 이미지 삽입
-**Button** - 뒤집기 버튼
+**ImageView** - poker 이미지 삽입 <br>
+**Button** - 뒤집기 버튼 <br>
 
 ### Code
 

@@ -9,6 +9,6 @@
 
 <img width="700" src="https://user-images.githubusercontent.com/60697742/124218497-47d7b280-db35-11eb-9676-f72daf393562.png">
 
-**SegmentedControl** - poker 이미지 삽입
-**Button** - 타이머 On / Off 버튼
-**Label** - 경과 시간
+**SegmentedControl** - poker 이미지 삽입 <br>
+**Button** - 타이머 On / Off 버튼 <br>
+**Label** - 경과 시간 <br>

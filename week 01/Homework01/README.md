@@ -8,9 +8,9 @@
 
 <img width="700" src="https://images.velog.io/images/nezhitsya/post/0faca232-bcc1-4096-844e-702775858b0c/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202021-06-29%20%EC%98%A4%EC%A0%84%209.13.57.png">
 
-**ImageView** - Flashlight 이미지 삽입
-**Label** - App Title
-**Button** - On / Off 버튼
+**ImageView** - Flashlight 이미지 삽입 <br>
+**Label** - App Title <br>
+**Button** - On / Off 버튼 <br>
 
 ### App Icon
 

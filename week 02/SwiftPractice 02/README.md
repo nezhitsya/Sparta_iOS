@@ -8,8 +8,8 @@
 
 <img width="700" src="https://user-images.githubusercontent.com/60697742/123888262-14a6ef00-d98e-11eb-8e27-ae1742458f34.png">
 
-**TextField** - 텍스트 필드
-**Button** - 채우기 / 지우기 버튼
+**TextField** - 텍스트 필드 <br>
+**Button** - 채우기 / 지우기 버튼 <br>
 
 ### Outlet Collection
 
