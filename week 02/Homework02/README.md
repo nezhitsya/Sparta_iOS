@@ -1,4 +1,4 @@
-# Ramen Timer
+# [Ramen Timer](https://velog.io/@nezhitsya/스파르타-코딩-클럽-개발일지-2)
 
 <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/60697742/124218343-00e9bd00-db35-11eb-9622-1f00c970f5ba.mov">
