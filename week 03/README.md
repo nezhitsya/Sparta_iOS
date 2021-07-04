@@ -58,3 +58,7 @@ self.imageView.frame = CGRect(x: 20, y: 200, width: 237, height: 235)
 - 내비게이션 컨트롤러 (UINavigationController)
     - 화면 전환을 관리해 주는 UIViewController의 일종
     - 각각의 화면을 내비게이션 컨트롤러에 한 장씩 쌓아 올리는 Stack 구조
+
+## 06. Swift 문법 - 상속
+
+## 07. Swift 문법 - 클로져
