@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chicken" translatesAutoresizingMaskIntoConstraints="NO" id="zUD-2a-jQo">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <rect key="frame" x="167" y="408" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="hfy-Tu-7oJ"/>
-                                    <constraint firstAttribute="height" constant="100" id="pGS-2l-zrQ"/>
+                                    <constraint firstAttribute="height" constant="80" id="JWZ-kA-F1b"/>
+                                    <constraint firstAttribute="width" constant="80" id="vMT-Yk-BfL"/>
                                 </constraints>
                             </imageView>
                         </subviews>
