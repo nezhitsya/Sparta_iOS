@@ -15,7 +15,7 @@
 
 **[ Input Controller ]** <br>
 
-stepper의 값을 textField에 표시
+textField에 값을 입력 시 stepper의 value에 반영
 
 ```swift
 @IBAction func textEditingChanged(_ sender: Any) {
@@ -26,7 +26,7 @@ stepper의 값을 textField에 표시
 }
 ```
 
-textField에 값을 입력 시 stepper의 value에 반영
+stepper의 값을 textField에 표시
 
 ```swift
 @IBAction func stepperValueChanged(_ sender: Any) {
