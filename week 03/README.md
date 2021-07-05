@@ -60,5 +60,9 @@ self.imageView.frame = CGRect(x: 20, y: 200, width: 237, height: 235)
     - 각각의 화면을 내비게이션 컨트롤러에 한 장씩 쌓아 올리는 Stack 구조
 
 ## 06. Swift 문법 - 상속
+1. 구조체(struct)가 아닌 클래스(class) 끼리만 상속 가능
+2. 상위 클래스의 함수를 수정하는 것을 override라 하고, 해당 함수 앞 override wkrtjd
+3. 한 클래스는 하나의 클래스만 상속 가능
 
 ## 07. Swift 문법 - 클로져
+- 다른 함수를 해당 함수에 변수로 집어넣는 방법
