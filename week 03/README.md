@@ -66,3 +66,9 @@ self.imageView.frame = CGRect(x: 20, y: 200, width: 237, height: 235)
 
 ## 07. Swift 문법 - 클로져
 - 다른 함수를 해당 함수에 변수로 집어넣는 방법
+
+## 08. [prepare 함수](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2003/SwiftPractice)
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/124406022-1fd99080-dd7b-11eb-8fb9-863271696e3c.mov">
+</p>
