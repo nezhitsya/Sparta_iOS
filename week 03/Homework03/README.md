@@ -31,7 +31,7 @@ var price = [6000, 9800, 8700, 8600, 9700]
   burgerImage.image = UIImage(named: image[pageControl.currentPage])
   burgerName.text = name[pageControl.currentPage]
   burgerPrice.text = "\(numberFormatter.string(from: NSNumber(value: price[pageControl.currentPage]))!) 원"
-    }
+}
 ```
 
 formatter를 사용하여 세 자릿수 마다 , 가 찍히도록 설정하였다.
