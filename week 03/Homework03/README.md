@@ -74,8 +74,8 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
 **[ Output Controller ]** <br>
 
-버거 값이 2 만원 이상일 경우, 배달비 0원.
-2 만원 미만일 경우 3 천원의 배달비 추가.
+버거 값이 2 만원 이상일 경우, 배달 비 0원.
+2 만원 미만일 경우 3 천원의 배달 비 추가.
 
 ```swift
 func setDelivery() {
