@@ -50,16 +50,53 @@ AF.request("https://api.thecatapi.com/v1/images/search").responseString { (resp)
 ...
 var request = URLRequest(url: URL(string: "https://api.thecatapi.com/v1/images/search")!)
 var task = URLSession(configuration: .dafault).dataTask(with: request) { (data, response, error) in
-  DispatchQueue.main.async {
-    print(String(data: data!, encoding: .utf8) ?? "")
-  }
+    DispatchQueue.main.async {
+        print(String(data: data!, encoding: .utf8) ?? "")
+    }  
 }
 
 task.resume()
 ```
 
 ## 03. API 서버와의 통신
-**API** : 클라이언트가 서버에 데이터를 요청할 때 미리 정해져있는 방법 (서버 주고, 요청 방식, 응답 방식 등의 규칙 저장) <br>
+**API** : 클라이언트가 서버에 데이터를 요청할 때 미리 정해져있는 방법 (서버 주고, 요청 방식, 응답 방식 등의 규칙 정의) <br>
 **Almofire & SwiftyJSON** <br>
 - Almofire : Swift로 쓰인 네트워크 라이브러리
 - SwiftyJSON : 서버의 결과로 받은 JSON 데이터를 Swift에서 깔끔하게 사용할 수 있는 라이브러리
+
+1. 보안 설정 변경
+```
+Info.plist -> App Transport Security Settings 추가 -> Allow Arbitrary Loads 를 YES로 선택
+```
+
+2. 데이터 가져오기 (GET)
+
+```swift
+AF.request("http://spartacodingclub.shop/review").responseJSON { (response) in
+    var json = JSON(response.value!)
+    print(json["reviews"][0])
+}
+```
+
+3. 데이터 보내기 (POST)
+
+```swift
+var parameters = [
+    "title_give": "너무나도 쉬운 iOS 개발",
+    "author_give": "주정한",
+    "review_give": "재밌어요!"
+]
+
+AF.request("http://spartacodingclub.shop/review", method: .post, parameters: parameters).responseJSON { (response) in
+    var json = JSON(response.value!)
+    print(json)
+}
+```
+
+## 04. UITableView & API - GET
+
+## 05. UITableView & API - POST
+
+## 06. UICollectionView
+
+## 07. UICollectionView & API
