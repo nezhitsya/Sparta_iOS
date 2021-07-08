@@ -59,7 +59,7 @@ task.resume()
 ```
 
 ## 03. API 서버와의 통신
-**API** : 클라이언트가 서버에 데이터를 요청할 때 미리 정해져있는 방법 (서버 주고, 요청 방식, 응답 방식 등의 규칙 정의) <br>
+**API** : 클라이언트가 서버에 데이터를 요청할 때 미리 정해져있는 방법 (서버 주고, 요청 방식, 응답 방식 등의 규칙 정의) <br> <br>
 **Almofire & SwiftyJSON** <br>
 - Almofire : Swift로 쓰인 네트워크 라이브러리
 - SwiftyJSON : 서버의 결과로 받은 JSON 데이터를 Swift에서 깔끔하게 사용할 수 있는 라이브러리
@@ -82,9 +82,9 @@ AF.request("http://spartacodingclub.shop/review").responseJSON { (response) in
 
 ```swift
 var parameters = [
-    "title_give": "너무나도 쉬운 iOS 개발",
-    "author_give": "주정한",
-    "review_give": "재밌어요!"
+    "title_give": "Swift 기초 다지기",
+    "author_give": "이다영",
+    "review_give": "재밌어요~~"
 ]
 
 AF.request("http://spartacodingclub.shop/review", method: .post, parameters: parameters).responseJSON { (response) in
