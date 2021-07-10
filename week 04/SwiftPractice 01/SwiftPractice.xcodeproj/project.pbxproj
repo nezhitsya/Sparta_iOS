@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B6F4A4C26994366008AE9A9 /* ReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F4A4B26994366008AE9A9 /* ReviewWriteViewController.swift */; };
+		0B6F4A4E26994C7E008AE9A9 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F4A4D26994C7E008AE9A9 /* ReviewTableViewCell.swift */; };
 		0B9298EB26969FB30056D7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9298EA26969FB30056D7E1 /* AppDelegate.swift */; };
 		0B9298ED26969FB30056D7E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9298EC26969FB30056D7E1 /* SceneDelegate.swift */; };
 		0B9298F226969FB30056D7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9298F026969FB30056D7E1 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0B6F4A4B26994366008AE9A9 /* ReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteViewController.swift; sourceTree = "<group>"; };
+		0B6F4A4D26994C7E008AE9A9 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		0B9298E726969FB30056D7E1 /* SwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9298EA26969FB30056D7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B9298EC26969FB30056D7E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				0B9298F826969FB40056D7E1 /* Info.plist */,
 				0B9299012696A1340056D7E1 /* ReviewTableViewController.swift */,
 				0B6F4A4B26994366008AE9A9 /* ReviewWriteViewController.swift */,
+				0B6F4A4D26994C7E008AE9A9 /* ReviewTableViewCell.swift */,
 			);
 			path = SwiftPractice;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				0B9298EB26969FB30056D7E1 /* AppDelegate.swift in Sources */,
 				0B9299022696A1340056D7E1 /* ReviewTableViewController.swift in Sources */,
+				0B6F4A4E26994C7E008AE9A9 /* ReviewTableViewCell.swift in Sources */,
 				0B6F4A4C26994366008AE9A9 /* ReviewWriteViewController.swift in Sources */,
 				0B9298ED26969FB30056D7E1 /* SceneDelegate.swift in Sources */,
 			);

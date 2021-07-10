@@ -48,8 +48,11 @@ class ReviewTableViewController: UITableViewController {
         var cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath)
         var review = reviews[indexPath.row]
 
-        cell.textLabel?.text = "\(review["author"].stringValue) - \(review["title"].stringValue)"
-        cell.detailTextLabel?.text = "\(review["review"].stringValue)"
+        if var reviewCell = cell as? ReviewTableViewCell {
+            reviewCell.titleLabel.text = review["title"].stringValue
+            reviewCell.authorLabel.text = review["author"].stringValue
+            reviewCell.reviewLabel.text = review["review"].stringValue
+        }
 
         return cell
     }

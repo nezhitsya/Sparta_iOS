@@ -2,7 +2,7 @@
 
 ## 화면 구성
 
-<img width="700" src="https://user-images.githubusercontent.com/60697742/125149308-403a8e00-e173-11eb-84bb-b3d0b299432f.png">
+<img width="800" src="https://user-images.githubusercontent.com/60697742/125150632-4123ed80-e17c-11eb-868c-a072752e006d.png">
 
 ### App Transport Security Settings
 
@@ -56,5 +56,34 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     cell.detailTextLabel?.text = "\(review["review"].stringValue)"
 
     return cell
+}
+```
+
+데이터 전송 (POST)
+
+```swift
+var parameters = [
+    "title_give": title,
+    "author_give": author,
+    "review_give": review
+]
+
+AF.request("http://spartacodingclub.shop/review", method: .post, parameters: parameters).responseJSON { (response) in
+    if var value = response.value {
+        // 입력 화면이 사라지고 테이블 뷰로 돌아가기
+        self.navigationController?.popViewController(animated: true)
+    }
+}
+```
+
+알림 띄우기
+
+```swift
+if title.count == 0 || author.count == 0 || review.count == 0 {
+    var alert = UIAlertController(title: "책리뷰", message: "모두 입력해주세요😀", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+
+    self.present(alert, animated: true, completion: nil)
+    return
 }
 ```
