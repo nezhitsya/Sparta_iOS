@@ -60,23 +60,91 @@
             </objects>
             <point key="canvasLocation" x="894" y="-464"/>
         </scene>
-        <!--View Controller-->
+        <!--Review Write View Controller-->
         <scene sceneID="Zpr-UE-zE2">
             <objects>
-                <viewController id="W5b-er-d56" sceneMemberID="viewController">
+                <viewController id="W5b-er-d56" customClass="ReviewWriteViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uQa-sG-pag">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtl-U9-Dki">
+                                <rect key="frame" x="73" y="301" width="63" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAd-yu-1ly">
+                                <rect key="frame" x="73.5" y="330" width="267" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="9ao-hT-1kb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uve-q3-72i">
+                                <rect key="frame" x="73" y="188" width="40" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ten-u9-cqE">
+                                <rect key="frame" x="73.5" y="217" width="267" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="Sqk-B8-eF5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5f-at-oRt">
+                                <rect key="frame" x="73.5" y="443" width="267" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="JhF-gA-cyx"/>
+                                    <constraint firstAttribute="width" constant="267" id="huJ-pZ-4F7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vb-nk-QQ5">
+                                <rect key="frame" x="73" y="414" width="66" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7hg-ly-SZs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vtl-U9-Dki" firstAttribute="top" secondItem="Ten-u9-cqE" secondAttribute="bottom" constant="50" id="M6p-JK-bbu"/>
+                            <constraint firstItem="hAd-yu-1ly" firstAttribute="centerX" secondItem="uQa-sG-pag" secondAttribute="centerX" id="Qkt-vo-WC8"/>
+                            <constraint firstItem="hAd-yu-1ly" firstAttribute="top" secondItem="Vtl-U9-Dki" secondAttribute="bottom" constant="5" id="Wnn-VH-6WE"/>
+                            <constraint firstItem="7vb-nk-QQ5" firstAttribute="leading" secondItem="7hg-ly-SZs" secondAttribute="leading" constant="73" id="aAM-rG-No5"/>
+                            <constraint firstItem="Ten-u9-cqE" firstAttribute="top" secondItem="uve-q3-72i" secondAttribute="bottom" constant="5" id="dEt-RM-giR"/>
+                            <constraint firstItem="c5f-at-oRt" firstAttribute="top" secondItem="7vb-nk-QQ5" secondAttribute="bottom" constant="5" id="mXR-qr-kLp"/>
+                            <constraint firstItem="c5f-at-oRt" firstAttribute="centerX" secondItem="uQa-sG-pag" secondAttribute="centerX" id="mfI-K3-6Qp"/>
+                            <constraint firstItem="Ten-u9-cqE" firstAttribute="centerX" secondItem="uQa-sG-pag" secondAttribute="centerX" id="otV-UX-MJV"/>
+                            <constraint firstItem="uve-q3-72i" firstAttribute="leading" secondItem="7hg-ly-SZs" secondAttribute="leading" constant="73" id="pl2-xz-NBa"/>
+                            <constraint firstItem="uve-q3-72i" firstAttribute="top" secondItem="7hg-ly-SZs" secondAttribute="top" constant="100" id="pzU-ng-bHo"/>
+                            <constraint firstItem="Vtl-U9-Dki" firstAttribute="leading" secondItem="7hg-ly-SZs" secondAttribute="leading" constant="73" id="tyK-GW-bF7"/>
+                            <constraint firstItem="7vb-nk-QQ5" firstAttribute="top" secondItem="hAd-yu-1ly" secondAttribute="bottom" constant="50" id="ySQ-HM-Zf4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PTi-hl-UDA">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="wB4-vX-Zvz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="wB4-vX-Zvz">
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="W5b-er-d56" id="thp-1v-j8u"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="authorText" destination="hAd-yu-1ly" id="K38-h6-Hx3"/>
+                        <outlet property="reviewText" destination="c5f-at-oRt" id="gW2-F1-KHh"/>
+                        <outlet property="titleText" destination="Ten-u9-cqE" id="iDZ-IP-vyk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XYe-2i-TLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1691" y="-464"/>
+            <point key="canvasLocation" x="1689.8550724637682" y="-464.0625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XUn-SW-SEd">

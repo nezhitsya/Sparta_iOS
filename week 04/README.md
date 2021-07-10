@@ -93,13 +93,13 @@ AF.request("http://spartacodingclub.shop/review", method: .post, parameters: par
 }
 ```
 
-## 04. UITableView & API - GET
+## 04. [UITableView & API - GET](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2004/SwiftPractice%2001)
 
 <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/60697742/125149635-14b8a300-e175-11eb-8c50-f7b200a02135.png">
 </p>
 
-## 05. UITableView & API - POST
+## 05. [UITableView & API - POST](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2004/SwiftPractice%2001)
 
 <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/60697742/124406022-1fd99080-dd7b-11eb-8fb9-863271696e3c.mov">
