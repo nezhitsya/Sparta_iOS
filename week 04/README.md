@@ -95,7 +95,15 @@ AF.request("http://spartacodingclub.shop/review", method: .post, parameters: par
 
 ## 04. UITableView & API - GET
 
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125149635-14b8a300-e175-11eb-8c50-f7b200a02135.png">
+</p>
+
 ## 05. UITableView & API - POST
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/124406022-1fd99080-dd7b-11eb-8fb9-863271696e3c.mov">
+</p>
 
 ## 06. UICollectionView
 

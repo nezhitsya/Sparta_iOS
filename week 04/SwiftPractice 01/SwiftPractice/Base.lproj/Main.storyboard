@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,11 +47,36 @@
                             <outlet property="delegate" destination="SFk-hI-WOQ" id="Kdl-Nc-rPH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="모두의 책 리뷰" id="OP2-Ht-G8q"/>
+                    <navigationItem key="navigationItem" title="모두의 책 리뷰" id="OP2-Ht-G8q">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vvg-O7-Fej">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="W5b-er-d56" kind="show" id="MO3-xe-u0J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sw7-Gg-ZPn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="894" y="-464"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zpr-UE-zE2">
+            <objects>
+                <viewController id="W5b-er-d56" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQa-sG-pag">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7hg-ly-SZs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PTi-hl-UDA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="wB4-vX-Zvz"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYe-2i-TLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1691" y="-464"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XUn-SW-SEd">

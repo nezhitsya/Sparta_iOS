@@ -22,28 +22,37 @@ class ReviewTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        AF.request("http://spartacodingclub.shop/review").responseJSON { (response) in
+            if var value = response.value {
+                self.reviews = JSON(value)["reviews"].arrayValue
+                self.tableView.reloadData()
+            }
+        }
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return reviews.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath)
+        var review = reviews[indexPath.row]
 
-        // Configure the cell...
+        cell.textLabel?.text = "\(review["author"].stringValue) - \(review["title"].stringValue)"
+        cell.detailTextLabel?.text = "\(review["review"].stringValue)"
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
