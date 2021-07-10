@@ -70,7 +70,14 @@
                             <outlet property="delegate" destination="yk4-Kj-d7c" id="qLg-wF-Vdg"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="메모장" id="1WT-kO-c9t"/>
+                    <navigationItem key="navigationItem" title="메모장" id="1WT-kO-c9t">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HMq-cL-c9O">
+                            <color key="tintColor" red="0.83350592850000005" green="0.62264728550000004" blue="0.1235655472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="xxY-ro-zxi" kind="show" identifier="AddMemo" id="248-Yb-fA8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="hXV-wB-XR9" kind="show" identifier="DetailView" id="7LG-nM-WzS"/>
                     </connections>
@@ -148,6 +155,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="HOL-Ch-Pm4">
                         <barButtonItem key="rightBarButtonItem" image="link" catalog="system" id="Erv-2W-Hlm">
+                            <color key="tintColor" red="0.83350592850000005" green="0.62264728550000004" blue="0.1235655472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="linkButtonClicked:" destination="hXV-wB-XR9" id="DII-Nb-jW9"/>
                             </connections>
@@ -162,7 +170,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjE-xu-1Gg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478.2608695652175" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1641" y="400"/>
+        </scene>
+        <!--메모 작성-->
+        <scene sceneID="Pdt-ZF-Vpp">
+            <objects>
+                <viewController id="xxY-ro-zxi" customClass="AddMemoViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1VW-gb-gwN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-cL-ahN">
+                                <rect key="frame" x="45" y="148" width="31" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9B-ao-lNK">
+                                <rect key="frame" x="45" y="270" width="72" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1DK-Y7-cY2">
+                                <rect key="frame" x="47" y="186" width="320" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2c-1A-WLg">
+                                <rect key="frame" x="47" y="308" width="320" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wE7-km-I5Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1DK-Y7-cY2" firstAttribute="leading" secondItem="wE7-km-I5Y" secondAttribute="leading" constant="47" id="8Wo-DM-IDe"/>
+                            <constraint firstItem="j9B-ao-lNK" firstAttribute="top" secondItem="1DK-Y7-cY2" secondAttribute="bottom" constant="50" id="AoI-gs-Hi5"/>
+                            <constraint firstItem="z2c-1A-WLg" firstAttribute="leading" secondItem="wE7-km-I5Y" secondAttribute="leading" constant="47" id="X6W-s9-sK1"/>
+                            <constraint firstItem="j9B-ao-lNK" firstAttribute="leading" secondItem="wE7-km-I5Y" secondAttribute="leading" constant="45" id="YHa-FN-DRC"/>
+                            <constraint firstItem="wE7-km-I5Y" firstAttribute="trailing" secondItem="z2c-1A-WLg" secondAttribute="trailing" constant="47" id="a5t-5n-Jma"/>
+                            <constraint firstItem="wE7-km-I5Y" firstAttribute="trailing" secondItem="1DK-Y7-cY2" secondAttribute="trailing" constant="47" id="eXP-cs-KUo"/>
+                            <constraint firstItem="fSe-cL-ahN" firstAttribute="top" secondItem="wE7-km-I5Y" secondAttribute="top" constant="60" id="gb9-Pc-fds"/>
+                            <constraint firstItem="z2c-1A-WLg" firstAttribute="top" secondItem="j9B-ao-lNK" secondAttribute="bottom" constant="20" id="nQi-Xr-zgm"/>
+                            <constraint firstItem="1DK-Y7-cY2" firstAttribute="top" secondItem="fSe-cL-ahN" secondAttribute="bottom" constant="20" id="qep-NH-6u9"/>
+                            <constraint firstItem="fSe-cL-ahN" firstAttribute="leading" secondItem="wE7-km-I5Y" secondAttribute="leading" constant="45" id="xFy-rG-w1x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="메모 작성" id="uCz-qK-jLl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="xOI-U9-BZe">
+                            <color key="tintColor" red="0.83350592850000005" green="0.62264728550000004" blue="0.1235655472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="xxY-ro-zxi" id="7kg-So-l2J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="commentText" destination="z2c-1A-WLg" id="YFi-KX-vLc"/>
+                        <outlet property="urlText" destination="1DK-Y7-cY2" id="2fF-q2-aEv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Skv-nK-EsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.5797101449277" y="-297.32142857142856"/>
         </scene>
     </scenes>
     <resources>

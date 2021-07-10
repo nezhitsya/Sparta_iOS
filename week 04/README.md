@@ -114,11 +114,8 @@ UICollectionView : 한 줄에 여러 칸이 들어가는 뷰
 ## 07. [UICollectionView & API - GET](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2004/SwiftPractice%2002)
 
 <p align="center">
-  <img width="300" src="https://user-images.githubusercontent.com/60697742/125150612-15086c80-e17c-11eb-88a5-f83b62d7bc32.png">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125153520-42aae100-e18f-11eb-8c51-2ecd48551d9f.png">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125153523-48082b80-e18f-11eb-8db7-72279d4a618a.png">
 </p>
 
 ## 08. [UICollectionView & API - POST](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2004/SwiftPractice%2002)
-
-<p align="center">
-  <img width="300" src="https://user-images.githubusercontent.com/60697742/125150612-15086c80-e17c-11eb-88a5-f83b62d7bc32.png">
-</p>

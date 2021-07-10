@@ -19,6 +19,7 @@
 		0B6F4A7B2699543E008AE9A9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0B6F4A7A2699543E008AE9A9 /* SDWebImageMapKit */; };
 		0B6F4A7D26995D15008AE9A9 /* MemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F4A7C26995D15008AE9A9 /* MemoCollectionViewCell.swift */; };
 		0B6F4A7F269965EF008AE9A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F4A7E269965EF008AE9A9 /* DetailViewController.swift */; };
+		0B6F4A8126997099008AE9A9 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6F4A8026997099008AE9A9 /* AddMemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0B6F4A6F26995379008AE9A9 /* MemoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCollectionViewController.swift; sourceTree = "<group>"; };
 		0B6F4A7C26995D15008AE9A9 /* MemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		0B6F4A7E269965EF008AE9A9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0B6F4A8026997099008AE9A9 /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				0B6F4A6F26995379008AE9A9 /* MemoCollectionViewController.swift */,
 				0B6F4A7C26995D15008AE9A9 /* MemoCollectionViewCell.swift */,
 				0B6F4A7E269965EF008AE9A9 /* DetailViewController.swift */,
+				0B6F4A8026997099008AE9A9 /* AddMemoViewController.swift */,
 			);
 			path = SwiftPractice;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6F4A8126997099008AE9A9 /* AddMemoViewController.swift in Sources */,
 				0B6F4A7D26995D15008AE9A9 /* MemoCollectionViewCell.swift in Sources */,
 				0B6F4A7026995379008AE9A9 /* MemoCollectionViewController.swift in Sources */,
 				0B6F4A7F269965EF008AE9A9 /* DetailViewController.swift in Sources */,
