@@ -1,8 +1,16 @@
 # Book Review
 
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125150601-fdc97f00-e17b-11eb-999a-af854cfc7eac.mov">
+</p>
+
 ## 화면 구성
 
 <img width="800" src="https://user-images.githubusercontent.com/60697742/125150632-4123ed80-e17c-11eb-868c-a072752e006d.png">
+
+**TableView** - 리뷰 리스트 화면 <br>
+**TableViewCell** - 제목, 저자, 리뷰를 보여줄 구성 커스텀 <br>
+**TextField** - 제목, 저자, 리뷰 입력 <br>
 
 ### App Transport Security Settings
 
@@ -37,6 +45,29 @@ override func viewWillAppear(_ animated: Bool) {
 }
 ```
 
+테이블 뷰 cell 커스텀 클래스 생성 및 IBOutlet 연결
+
+```swift
+class ReviewTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var reviewLabel: UILabel!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}
+```
+
 테이블 뷰에 데이터 연결
 
 ```swift
@@ -52,8 +83,11 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     var cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath)
     var review = reviews[indexPath.row]
 
-    cell.textLabel?.text = "\(review["author"].stringValue) - \(review["title"].stringValue)"
-    cell.detailTextLabel?.text = "\(review["review"].stringValue)"
+    if var reviewCell = cell as? ReviewTableViewCell {
+        reviewCell.titleLabel.text = review["title"].stringValue
+        reviewCell.authorLabel.text = review["author"].stringValue
+        reviewCell.reviewLabel.text = review["review"].stringValue
+    }
 
     return cell
 }
