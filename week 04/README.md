@@ -107,4 +107,18 @@ AF.request("http://spartacodingclub.shop/review", method: .post, parameters: par
 
 ## 06. UICollectionView
 
-## 07. UICollectionView & API
+<img width="700" src="https://user-images.githubusercontent.com/60697742/125150861-e55a6400-e17d-11eb-82d1-cdc23f28ba29.jpg">
+
+UICollectionView : 한 줄에 여러 칸이 들어가는 뷰
+
+## 07. UICollectionView & API - GET
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125150612-15086c80-e17c-11eb-88a5-f83b62d7bc32.png">
+</p>
+
+## 08. UICollectionView & API - POST
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125150612-15086c80-e17c-11eb-88a5-f83b62d7bc32.png">
+</p>
