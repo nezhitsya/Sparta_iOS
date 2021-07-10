@@ -30,6 +30,8 @@ Info.plist 파일에 App Transport Security Settings를 추가하고 Allow Arbit
 
 ### Code
 
+**ReviewTableViewController** <br>
+
 화면 뜨기 직전에 데이터 요청 (GET)
 
 ```swift
@@ -92,6 +94,8 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     return cell
 }
 ```
+
+**ReviewWriteViewController** <br>
 
 데이터 전송 (POST)
 
