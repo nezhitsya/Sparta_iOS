@@ -32,8 +32,18 @@ Segment Control 이용
 무언가를 입력받는 입력화면 + 이에 대한 결과를 보여주는 결과 화면
 ```
 
-## [4 주차 과제]("")
+## [4 주차 과제]("https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2004/Homework04")
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125215438-73595a80-e2f6-11eb-814b-679619ee9aad.mov">
+</p>
 
 ```
 라이브러리를 사용하여 API의 사진 URL GET
+```
+
+## [5 주차 과제]("")
+
+```
+
 ```
