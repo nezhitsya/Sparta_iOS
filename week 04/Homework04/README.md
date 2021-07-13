@@ -1,4 +1,4 @@
-# [Angel Cat]("https://velog.io/@nezhitsya/스파르타-코딩-클럽-개발일지-4")
+# [Angel Cat](https://velog.io/@nezhitsya/스파르타-코딩-클럽-개발일지-4)
 
 <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/60697742/125215438-73595a80-e2f6-11eb-814b-679619ee9aad.mov">
