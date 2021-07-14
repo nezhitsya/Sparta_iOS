@@ -48,9 +48,9 @@ noti.notificationOccurred(.error)   // 에러
 noti.notificationOccurred(.warning) // 주의
 ```
 
-## 03. 인터렉션 앱 구현
+## 03. [인터렉션 앱 구현](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2005/SwiftPractice)
 
-## 04. 인터렉션 앱 구현 - 터치
+## 04. [인터렉션 앱 구현 - 터치](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2005/SwiftPractice)
 - 화면에 터치 누르기 (시작) - 화면에 터치 움직이기 (중간) - 화면에서 터치 떼기 (끝)
 
 ```swift
@@ -75,9 +75,9 @@ override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
 }
 ```
 
-## 05. 인터렉션 앱 구현 - 알고리즘
+## 05. [인터렉션 앱 구현 - 알고리즘](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2005/SwiftPractice)
 
-## 06. 인터렉션 앱 구현 - 애니메이션
+## 06. [인터렉션 앱 구현 - 애니메이션](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2005/SwiftPractice)
 - **애니메이션** : 화면에 더욱 생동감을 주는 요소. 자연스러운 전환 제공
 
 ```swift
@@ -94,6 +94,55 @@ UIView.animate(withDuration: 5) { // 5는 애니메이션이 움직일 시간 �
 - 이 외에 애니메이션을 넣기 위해서 Timer 사용
 
 ## 07. Firebase - 사용자 수
+
+Firebase 설정
+
+```
+GoogleService-Info.plist 다운로드 > 프로젝트에 드래그 앤 드롭 > Copy items if needed
+```
+
+CocoaPods 설치
+
+```
+sudo gem install cocoapods
+
+프로젝트 폴더로 이동 > pod init > oepn Podfile > pod 'Firebase/Analytics' 추가 및 저장 > pod install --repo-update
+
+FingerGame.xcworkspace로 열기
+```
+
+AppDelegate.Swift
+
+```swift
+import UIKit
+import Firebase // 추가
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        FirebaseApp.configure() // 추가
+        return true
+    }
+
+    // MARK: UISceneSession Lifecycle
+
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+}
+```
 
 ## 08. 광고 넣기
 
