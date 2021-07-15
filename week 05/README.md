@@ -146,4 +146,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## 08. 광고 넣기
 
+[AdMob](https://accounts.google.com/ServiceLogin/webreauth?service=admob&passive=1209600&osid=1&continue=https%3A%2F%2Fapps.admob.com%2Fsignup%3Futm_medium%3Det%26utm_source%3Dinternal%26utm_campaign%3D2019-admob-gbl-helpcentre-sign-up-for-admob&followup=https%3A%2F%2Fapps.admob.com%2Fsignup%3Futm_medium%3Det%26utm_source%3Dinternal%26utm_campaign%3D2019-admob-gbl-helpcentre-sign-up-for-admob&flowName=GlifWebSignIn&flowEntry=ServiceLogin)
+
+- AdMob은 앱을 제작하고 테스트할 때 운영 중인 광고가 아니라 테스트 광고를 사용하도록 하고 있다.
+
+CocoaPods 업데이트
+
+```
+pod 'Firebase/AdMob'
+```
+
+AppDelegate.swift 수정
+
+```swift
+import UIKit
+import Firebase
+import GoogleMobileAds // 추가
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        FirebaseApp.configure() // 추가
+
+        GADMobileAds.sharedInstance().start(completionHandler: nil) //추가
+        return true
+    }
+...
+```
+
+Info.plist 에 추가
+
+```
+<key>GADApplicationIdentifier</key>
+<string>ca-app-pub-3940256099942544~1458002511</string>
+<key>SKAdNetworkItems</key>
+<array>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>cstr6suwn9.skadnetwork</string>
+    </dict>
+</array>
+<key>NSUserTrackingUsageDescription</key>
+<string>This identifier will be used to deliver personalized ads to you.</string>
+```
+
 ## 09. 앱스토어 출시
