@@ -1,0 +1,6 @@
+framework module Pods_SwiftPractice {
+  umbrella header "Pods-SwiftPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}

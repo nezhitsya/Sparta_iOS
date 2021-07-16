@@ -50,7 +50,9 @@ noti.notificationOccurred(.warning) // 주의
 
 ## 03. [인터렉션 앱 구현 - storyboard](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2005/SwiftPractice)
 
-<img width="300" src="https://user-images.githubusercontent.com/60697742/125892593-df16d6c4-c463-4ba4-a8f2-ed4e99f2965f.png">
+<img width="700" src="https://user-images.githubusercontent.com/60697742/125892593-df16d6c4-c463-4ba4-a8f2-ed4e99f2965f.png">
+
+**UIView** - 게임 화면으로 터치와 연결되는 view
 
 ## 04. [인터렉션 앱 구현 - 터치](https://github.com/nezhitsya/Sparta_iOS/tree/master/week%2005/SwiftPractice)
 - 화면에 터치 누르기 (시작) - 화면에 터치 움직이기 (중간) - 화면에서 터치 떼기 (끝)
@@ -103,6 +105,10 @@ UIView.animate(withDuration: 5) { // 5는 애니메이션이 움직일 시간 �
     - 뷰를 회전하거나 확대하는데 쓰이는 transform
 - 이 외에 애니메이션을 넣기 위해서 Timer 사용
 
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125895626-f9dacaaa-9de7-439e-98e3-c43504b9e8a2.mov">
+</p>
+
 ## 07. Firebase - 사용자 수
 
 Firebase 설정
@@ -129,8 +135,6 @@ import Firebase // 추가
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

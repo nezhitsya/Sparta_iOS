@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1067445167539-ma3f1u7bf36fkd2q9o5daujq3m04qtoo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1067445167539-ma3f1u7bf36fkd2q9o5daujq3m04qtoo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDbU2ngD2d48V69KbTXniBNv0yTD1HbjuE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1067445167539</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sparta.SwiftPractice</string>
+	<key>PROJECT_ID</key>
+	<string>fingergame-78eae</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fingergame-78eae.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1067445167539:ios:a901740b172819873097c6</string>
+</dict>
+</plist>
