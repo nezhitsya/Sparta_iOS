@@ -117,6 +117,8 @@ Firebase 설정
 GoogleService-Info.plist 다운로드 > 프로젝트에 드래그 앤 드롭 > Copy items if needed
 ```
 
+<img width="700" src="https://user-images.githubusercontent.com/60697742/125899799-9140e729-84ac-49d6-8d65-13cb0403d0a1.png">
+
 CocoaPods 설치
 
 ```

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import GoogleMobileAds
 
 class FingerGameViewController: UIViewController {
     
@@ -23,6 +25,8 @@ class FingerGameViewController: UIViewController {
     }
     
     func touchCountDidChange() {
+        Analytics.logEvent("Game Start", parameters: nil)
+        
         timer?.invalidate()
         
         timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: { (t) in
@@ -43,6 +47,8 @@ class FingerGameViewController: UIViewController {
                     roundView.layer.cornerRadius = 60
                 }
             }
+            
+            Analytics.logEvent("Game End", parameters: ["touchCount": self.gameView.touchToRoundView.count])
         })
         
         resetSecondsTimer()

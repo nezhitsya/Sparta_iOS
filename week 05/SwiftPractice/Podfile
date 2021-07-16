@@ -7,5 +7,6 @@ target 'SwiftPractice' do
 
   # Pods for SwiftPractice
   pod 'Firebase/Analytics'
+  pod 'Firebase/AdMob'
 
 end
