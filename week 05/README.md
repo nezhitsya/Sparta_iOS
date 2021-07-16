@@ -239,3 +239,16 @@ func requestIDFA() {
 </p>
 
 ## 09. 앱스토어 출시
+
+개발자 등록 필요 > 1 년에 99 달러 결제 <br>
+[Apple의 App Store 심사 지침](https://developer.apple.com/kr/app-store/review/guidelines/)<br>
+
+- 출시 과정
+  1. App Icon 넣기
+  2. Display Name 설정
+  3. Product 메뉴 > Archive
+  4. Organizer > Distribute App > 제출
+  5. [접속](https://appstoreconnect.apple.com/) 후 + 버튼을 눌러 신규 앱 작성
+  6. App Store에 앱의 설명과 스크린샷을 자세히 추가 - [스크린샷 사양](https://help.apple.com/app-store-connect/#/devd274dd925)
+  7. 빌드 선택 및 추가
+  8. 저장 후 제출 > 심사 기다리기!
