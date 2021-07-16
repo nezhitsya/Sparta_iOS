@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		0B652603269D27FE008F2C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B652602269D27FE008F2C96 /* AppDelegate.swift */; };
 		0B652605269D27FE008F2C96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B652604269D27FE008F2C96 /* SceneDelegate.swift */; };
-		0B652607269D27FE008F2C96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B652606269D27FE008F2C96 /* ViewController.swift */; };
 		0B65260A269D27FE008F2C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B652608269D27FE008F2C96 /* Main.storyboard */; };
 		0B65260C269D27FF008F2C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B65260B269D27FF008F2C96 /* Assets.xcassets */; };
 		0B65260F269D27FF008F2C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B65260D269D27FF008F2C96 /* LaunchScreen.storyboard */; };
+		0BE58D9626A140D100FEE6F5 /* FingerStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58D9526A140D100FEE6F5 /* FingerStartViewController.swift */; };
+		0BE58D9826A140E400FEE6F5 /* FingerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58D9726A140E400FEE6F5 /* FingerGameViewController.swift */; };
+		0BE58D9A26A1419300FEE6F5 /* FingerGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE58D9926A1419300FEE6F5 /* FingerGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B6525FF269D27FE008F2C96 /* SwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B652602269D27FE008F2C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B652604269D27FE008F2C96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B652606269D27FE008F2C96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B652609269D27FE008F2C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B65260B269D27FF008F2C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B65260E269D27FF008F2C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B652610269D27FF008F2C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE58D9526A140D100FEE6F5 /* FingerStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerStartViewController.swift; sourceTree = "<group>"; };
+		0BE58D9726A140E400FEE6F5 /* FingerGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerGameViewController.swift; sourceTree = "<group>"; };
+		0BE58D9926A1419300FEE6F5 /* FingerGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				0B652602269D27FE008F2C96 /* AppDelegate.swift */,
 				0B652604269D27FE008F2C96 /* SceneDelegate.swift */,
-				0B652606269D27FE008F2C96 /* ViewController.swift */,
 				0B652608269D27FE008F2C96 /* Main.storyboard */,
 				0B65260B269D27FF008F2C96 /* Assets.xcassets */,
 				0B65260D269D27FF008F2C96 /* LaunchScreen.storyboard */,
 				0B652610269D27FF008F2C96 /* Info.plist */,
+				0BE58D9526A140D100FEE6F5 /* FingerStartViewController.swift */,
+				0BE58D9726A140E400FEE6F5 /* FingerGameViewController.swift */,
+				0BE58D9926A1419300FEE6F5 /* FingerGameView.swift */,
 			);
 			path = SwiftPractice;
 			sourceTree = "<group>";
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B652607269D27FE008F2C96 /* ViewController.swift in Sources */,
 				0B652603269D27FE008F2C96 /* AppDelegate.swift in Sources */,
+				0BE58D9826A140E400FEE6F5 /* FingerGameViewController.swift in Sources */,
+				0BE58D9626A140D100FEE6F5 /* FingerStartViewController.swift in Sources */,
 				0B652605269D27FE008F2C96 /* SceneDelegate.swift in Sources */,
+				0BE58D9A26A1419300FEE6F5 /* FingerGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
