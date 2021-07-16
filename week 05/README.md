@@ -160,6 +160,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
+<img width="700" src="https://user-images.githubusercontent.com/60697742/125902053-3fbc95bc-8c42-4641-bdcd-6fe38a5b9e86.png">
+
 ## 08. 광고 넣기
 
 [AdMob](https://accounts.google.com/ServiceLogin/webreauth?service=admob&passive=1209600&osid=1&continue=https%3A%2F%2Fapps.admob.com%2Fsignup%3Futm_medium%3Det%26utm_source%3Dinternal%26utm_campaign%3D2019-admob-gbl-helpcentre-sign-up-for-admob&followup=https%3A%2F%2Fapps.admob.com%2Fsignup%3Futm_medium%3Det%26utm_source%3Dinternal%26utm_campaign%3D2019-admob-gbl-helpcentre-sign-up-for-admob&flowName=GlifWebSignIn&flowEntry=ServiceLogin)
@@ -192,7 +194,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ...
 ```
 
-Info.plist 에 추가
+Info.plist 에 추가 (Open As > Source Code)
 
 ```
 <key>GADApplicationIdentifier</key>
@@ -207,5 +209,33 @@ Info.plist 에 추가
 <key>NSUserTrackingUsageDescription</key>
 <string>This identifier will be used to deliver personalized ads to you.</string>
 ```
+
+광고 준비하기
+
+```swift
+import UIKit
+import Firebase
+import GoogleMobileAds
+import AppTrackingTransparency
+import AdSupport
+
+func requestIDFA() {
+    ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+        let request = GADRequest()
+        GADInterstitialAdBeta.load(withAdUnitID: "ca-app-pub-3940256099942544/4411468910",
+                                       request: request) { (ad, error) in
+            if error != nil {
+                return
+            }
+
+            self.interstitial = ad
+        }
+    })
+}
+```
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/125902285-834feab9-3b25-4200-abfc-5f83adf96aa0.mov">
+</p>
 
 ## 09. 앱스토어 출시

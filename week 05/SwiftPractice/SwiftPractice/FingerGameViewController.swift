@@ -8,20 +8,25 @@
 import UIKit
 import Firebase
 import GoogleMobileAds
+import AppTrackingTransparency
+import AdSupport
 
 class FingerGameViewController: UIViewController {
     
     @IBOutlet weak var gameView: FingerGameView!
     @IBOutlet weak var secondsLabel: UILabel!
     
+    var interstitial: GADInterstitialAdBeta?
     var timer: Timer?
     var secondsTimer: Timer?
     var secondsLeft = 5
+    var didOpenAd = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         gameView.controller = self
+        requestIDFA()
     }
     
     func touchCountDidChange() {
@@ -49,6 +54,11 @@ class FingerGameViewController: UIViewController {
             }
             
             Analytics.logEvent("Game End", parameters: ["touchCount": self.gameView.touchToRoundView.count])
+            
+            if self.didOpenAd == false {
+                self.interstitial?.present(fromRootViewController: self)
+                self.didOpenAd = true
+            }
         })
         
         resetSecondsTimer()
@@ -83,6 +93,21 @@ class FingerGameViewController: UIViewController {
         UIView.animate(withDuration: 0.5) {
             self.secondsLabel.alpha = 0
         }
+    }
+    
+    // 광고준비하기
+    func requestIDFA() {
+        ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+            let request = GADRequest()
+            GADInterstitialAdBeta.load(withAdUnitID: "ca-app-pub-3940256099942544/4411468910",
+                                       request: request) { (ad, error) in
+                if error != nil {
+                    return
+                }
+                
+                self.interstitial = ad
+            }
+        })
     }
 
     /*
