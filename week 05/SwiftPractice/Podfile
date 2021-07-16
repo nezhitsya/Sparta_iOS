@@ -6,7 +6,7 @@ target 'SwiftPractice' do
   use_frameworks!
 
   # Pods for SwiftPractice
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Analytics', '~> 7.10.0'
   pod 'Firebase/AdMob'
 
 end
