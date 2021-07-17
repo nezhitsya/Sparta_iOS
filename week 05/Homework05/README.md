@@ -1,4 +1,4 @@
-# Finger Game
+# [Finger Game](https://velog.io/@nezhitsya/스파르타-코딩-클럽-개발일지-5)
 
 <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/60697742/126028737-6accf4ce-f97e-47dd-86aa-b6299d808f3a.mov">
