@@ -50,12 +50,12 @@
         <!--Finger Game View Controller-->
         <scene sceneID="XgS-YG-lJd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="47m-dN-IKg" customClass="FingerGameViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="47m-dN-IKg" customClass="FingerGameViewController" customModule="Homework05" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uk2-li-dlO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aX-vM-du5" customClass="FingerGameView" customModule="SwiftPractice" customModuleProvider="target">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aX-vM-du5" customClass="FingerGameView" customModule="Homework05" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="76" width="414" height="786"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKI-FN-Odm">

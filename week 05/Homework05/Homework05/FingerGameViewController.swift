@@ -28,21 +28,29 @@ class FingerGameViewController: UIViewController {
         timer?.invalidate()
         
         timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: { (t) in
-            for roundView in self.gameView.touchToRoundView.values {
-                var randomChoice = Bool.random()
+            let roundViews = [UIView](self.gameView.touchToRoundView.values)
+            
+            // 터치 개수가 0이면 반응 무
+            if roundViews.count == 0{
+                return
+            }
+            
+            let randomChoice = Int.random(in: 0..<roundViews.count)
+            
+            for i in 0..<roundViews.count {
+                let roundView = roundViews[i]
                 
                 UIView.animate(withDuration: 1) {
-                    if randomChoice {
+                    if i == randomChoice {
                         roundView.backgroundColor = UIColor(named: "pink")
+                        
+                        let center = roundView.center
+                        roundView.frame.size = CGSize(width: 120, height: 120)
+                        roundView.center = center
+                        roundView.layer.cornerRadius = 60
                     } else {
                         roundView.backgroundColor = UIColor(named: "green")
                     }
-                    
-                    var roundViewCenter = roundView.center
-                    
-                    roundView.frame.size = CGSize(width: 120, height: 120)
-                    roundView.center = roundViewCenter
-                    roundView.layer.cornerRadius = 60
                 }
             }
         })
@@ -53,7 +61,7 @@ class FingerGameViewController: UIViewController {
     func resetSecondsTimer() {
         secondsTimer?.invalidate()
         
-        if gameView.touchToRoundView.values.count > 0 {
+        if gameView.touchToRoundView.count > 0 {
             secondsLeft = 5
             secondsLabel.text = "5"
             self.blinkTimerLabel()
@@ -66,10 +74,12 @@ class FingerGameViewController: UIViewController {
                 if self.secondsLeft == 0 {
                     self.secondsLabel.text = ""
                     self.secondsTimer?.invalidate()
+                    self.blinkTimerLabel()
                 }
             })
         } else {
-            secondsLabel.text = ""
+            self.secondsLabel.text = ""
+            self.blinkTimerLabel()
         }
     }
     
