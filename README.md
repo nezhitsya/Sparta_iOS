@@ -42,8 +42,13 @@ Segment Control 이용
 라이브러리를 사용하여 API의 사진 URL GET
 ```
 
-## [5 주차 과제]()
+## [5 주차 과제](https://velog.io/@nezhitsya/스파르타-코딩-클럽-개발일지-5)
+
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/126028737-6accf4ce-f97e-47dd-86aa-b6299d808f3a.mov">
+</p>
 
 ```
 터치 시, 랜덤으로 색상 변경
+n 개의 터치 중 랜덤으로 1 개만 다른 색상
 ```

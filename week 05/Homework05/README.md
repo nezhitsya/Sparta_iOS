@@ -1,7 +1,7 @@
 # Finger Game
 
 <p align="center">
-  <img width="300" src="https://user-images.githubusercontent.com/60697742/125902285-834feab9-3b25-4200-abfc-5f83adf96aa0.mov">
+  <img width="300" src="https://user-images.githubusercontent.com/60697742/126028737-6accf4ce-f97e-47dd-86aa-b6299d808f3a.mov">
 </p>
 
 ## 화면 구성
@@ -102,21 +102,29 @@ func touchCountDidChange() {
     timer?.invalidate()
 
     timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: { (t) in
-        for roundView in self.gameView.touchToRoundView.values {
-            var randomChoice = Bool.random()
+        let roundViews = [UIView](self.gameView.touchToRoundView.values)
+
+        // 터치 개수가 0이면 반응 무
+        if roundViews.count == 0{
+            return
+        }
+
+        let randomChoice = Int.random(in: 0..<roundViews.count)
+
+        for i in 0..<roundViews.count {
+            let roundView = roundViews[i]
 
             UIView.animate(withDuration: 1) {
-                if randomChoice {
+                if i == randomChoice {
                     roundView.backgroundColor = UIColor(named: "pink")
+
+                    let center = roundView.center
+                    roundView.frame.size = CGSize(width: 120, height: 120)
+                    roundView.center = center
+                    roundView.layer.cornerRadius = 60
                 } else {
                     roundView.backgroundColor = UIColor(named: "green")
                 }
-
-                var roundViewCenter = roundView.center
-
-                roundView.frame.size = CGSize(width: 120, height: 120)
-                roundView.center = roundViewCenter
-                roundView.layer.cornerRadius = 60
             }
         }
     })
@@ -131,7 +139,7 @@ func touchCountDidChange() {
 func resetSecondsTimer() {
     secondsTimer?.invalidate()
 
-    if gameView.touchToRoundView.values.count > 0 {
+    if gameView.touchToRoundView.count > 0 {
         secondsLeft = 5
         secondsLabel.text = "5"
         self.blinkTimerLabel()
@@ -144,10 +152,12 @@ func resetSecondsTimer() {
             if self.secondsLeft == 0 {
                 self.secondsLabel.text = ""
                 self.secondsTimer?.invalidate()
+                self.blinkTimerLabel()
             }
         })
     } else {
-        secondsLabel.text = ""
+        self.secondsLabel.text = ""
+        self.blinkTimerLabel()
     }
 }
 ```
