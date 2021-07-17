@@ -106,13 +106,13 @@
     <resources>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="blue">
-            <color red="0.4859529138" green="0.513158381" blue="0.99170464280000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.48600000143051147" green="0.5130000114440918" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="orange">
-            <color red="0.9820808768" green="0.59919553999999997" blue="0.021050922569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98199999332427979" green="0.59899997711181641" blue="0.020999999716877937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="yellow">
-            <color red="0.96684592960000004" green="0.99301379919999999" blue="0.0163524393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.96700000762939453" green="0.99299997091293335" blue="0.016000000759959221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

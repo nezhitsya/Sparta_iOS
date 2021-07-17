@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3IR-Ul-FAO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7YC-Gs-BZK">
+            <objects>
+                <viewController id="3IR-Ul-FAO" customClass="ViewController" customModule="Homework05" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9l7-8g-4M0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finger Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQd-25-hms">
+                                <rect key="frame" x="120.5" y="244" width="173" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" name="orange"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cx-va-aa5">
+                                <rect key="frame" x="185.5" y="666" width="43" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" name="yellow"/>
+                                </state>
+                                <connections>
+                                    <segue destination="47m-dN-IKg" kind="show" id="4ry-ZK-5b0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QyP-u9-ajh"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lQd-25-hms" firstAttribute="top" secondItem="QyP-u9-ajh" secondAttribute="top" constant="200" id="jDX-Pi-DQU"/>
+                            <constraint firstItem="3Cx-va-aa5" firstAttribute="centerX" secondItem="9l7-8g-4M0" secondAttribute="centerX" id="jNt-H3-lDr"/>
+                            <constraint firstItem="lQd-25-hms" firstAttribute="centerX" secondItem="9l7-8g-4M0" secondAttribute="centerX" id="sbB-4C-Bb1"/>
+                            <constraint firstItem="QyP-u9-ajh" firstAttribute="bottom" secondItem="3Cx-va-aa5" secondAttribute="bottom" constant="160" id="vWd-Of-52p"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kp-f8-Eiu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="43"/>
+        </scene>
+        <!--Finger Game View Controller-->
+        <scene sceneID="XgS-YG-lJd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="47m-dN-IKg" customClass="FingerGameViewController" customModule="SwiftPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uk2-li-dlO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aX-vM-du5" customClass="FingerGameView" customModule="SwiftPractice" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="76" width="414" height="786"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKI-FN-Odm">
+                                        <rect key="frame" x="207" y="10" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tKI-FN-Odm" firstAttribute="centerX" secondItem="1aX-vM-du5" secondAttribute="centerX" id="9AF-pz-uhY"/>
+                                    <constraint firstItem="tKI-FN-Odm" firstAttribute="top" secondItem="1aX-vM-du5" secondAttribute="top" constant="10" id="X3d-j1-J5p"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRU-Ob-TtJ">
+                                <rect key="frame" x="20" y="44" width="18" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" name="blue"/>
+                                <state key="normal" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="exitButtonClicked:" destination="47m-dN-IKg" eventType="touchUpInside" id="5u5-lv-KIx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h8a-bk-NVW"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1aX-vM-du5" firstAttribute="leading" secondItem="h8a-bk-NVW" secondAttribute="leading" id="Pyv-09-Mpk"/>
+                            <constraint firstItem="CRU-Ob-TtJ" firstAttribute="top" secondItem="h8a-bk-NVW" secondAttribute="top" id="RbZ-jc-0my"/>
+                            <constraint firstItem="1aX-vM-du5" firstAttribute="bottom" secondItem="h8a-bk-NVW" secondAttribute="bottom" id="UKY-bi-v0F"/>
+                            <constraint firstItem="1aX-vM-du5" firstAttribute="top" secondItem="CRU-Ob-TtJ" secondAttribute="bottom" constant="8" symbolic="YES" id="dfP-iA-oGy"/>
+                            <constraint firstItem="1aX-vM-du5" firstAttribute="trailing" secondItem="h8a-bk-NVW" secondAttribute="trailing" id="gGa-ya-Fta"/>
+                            <constraint firstItem="CRU-Ob-TtJ" firstAttribute="leading" secondItem="h8a-bk-NVW" secondAttribute="leading" constant="20" id="hDo-au-PdL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iLr-8t-vl6"/>
+                    <connections>
+                        <outlet property="gameView" destination="1aX-vM-du5" id="ULU-ue-xBN"/>
+                        <outlet property="secondsLabel" destination="tKI-FN-Odm" id="0pU-FG-brG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A14-le-po2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="blue">
+            <color red="0.48600000143051147" green="0.5130000114440918" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.98199999332427979" green="0.59899997711181641" blue="0.020999999716877937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellow">
+            <color red="0.96700000762939453" green="0.99299997091293335" blue="0.016000000759959221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
